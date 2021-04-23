@@ -1,6 +1,6 @@
-
+ PImage pepperoni;
 void setup() {
-     PImage pepperoni = loadImage("pepperoni.png");
+     pepperoni = loadImage("pepperoni.png");
     
     size(800,800);
     fill(#DBAA6A);
@@ -11,7 +11,10 @@ void setup() {
     fill(#F9FF55);
     ellipse(400,400, 325,325);
     
-    if(mousePressed){
+   
+}
+void draw() {
+     if(mousePressed){
     pepperoni.resize(50,50);
     image(pepperoni,300,300);
     image(pepperoni,350,250);
@@ -20,7 +23,4 @@ void setup() {
     image(pepperoni,450,300);
     
     }
-}
-void draw() {
-    
 }
